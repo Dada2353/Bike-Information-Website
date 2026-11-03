@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BIKEVERSE | Bike Guide</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="logo" href="#home">BIKE<span>VERSE</span></a><button id="menuBtn" class="menu-btn">☰</button><nav id="nav"><a href="#home">Home</a><a href="#collection">Bikes</a><a href="#compare">Compare</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero" id="home"><div><p class="eyebrow">FIND YOUR NEXT ADVENTURE</p><h1>THE ROAD IS<br><span>YOURS.</span></h1><p class="muted">Explore motorcycles, compare specifications and discover a machine that matches your riding style.</p><a class="btn" href="#collection">Explore bikes ↗</a></div><div class="hero-art"><div class="ring"></div><div class="motorcycle">🏍️</div><small>BUILT FOR THE WAY YOU RIDE</small></div></section>
+<section class="stats"><div><b>06</b><span>BIKES TO EXPLORE</span></div><div><b>03</b><span>RIDE CATEGORIES</span></div><div><b>01</b><span>PASSION FOR RIDING</span></div></section>
+<section class="section" id="collection"><div class="heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Choose your <span>machine.</span></h2></div><p class="muted">From everyday commutes to weekend adventures, find a bike for your journey.</p></div><div class="filters" id="filters"><button class="active" data-filter="all">All bikes</button><button data-filter="street">Street</button><button data-filter="sport">Sport</button><button data-filter="adventure">Adventure</button></div><div class="grid" id="bikeGrid"></div><p class="note">Prices and specifications are illustrative demo data. Confirm current details with the manufacturer or dealer.</p></section>
+<section class="section compare" id="compare"><div class="heading"><div><p class="eyebrow">MAKE THE RIGHT CALL</p><h2>Compare your <span>favourites.</span></h2></div><p class="muted">Choose two motorcycles to compare their specifications.</p></div><div class="selectors"><label>First bike<select id="bikeOne"></select></label><label>Second bike<select id="bikeTwo"></select></label></div><div class="table-wrap"><table id="compareTable"></table></div></section>
+<section class="section about" id="about"><div class="stamp">B<span>V</span></div><div><p class="eyebrow">MORE THAN TWO WHEELS</p><h2>Every ride has<br><span>a story.</span></h2><p class="muted">BIKEVERSE is a bike discovery guide. Explore categories, compare important specifications and build your shortlist before visiting a showroom.</p></div></section>
+<section class="section contact" id="contact"><div class="heading"><div><p class="eyebrow">LET'S TALK BIKES</p><h2>Get in <span>touch.</span></h2></div><p class="muted">Have a question or a bike suggestion? Send us a message.</p></div><form id="contactForm"><div class="form-row"><label>Your name<input id="name" required placeholder="Your name"></label><label>Email address<input id="email" type="email" required placeholder="you@example.com"></label></div><label>Message<textarea id="message" rows="5" required placeholder="Write your message..."></textarea></label><button class="btn">Send message ↗</button><p id="formMessage" class="success"></p></form><p class="note">Demo form only. It does not send or store messages.</p></section>
+</main><footer><a class="logo" href="#home">BIKE<span>VERSE</span></a><span>Made for the love of the ride.</span><a href="#home">Back to top ↑</a></footer>
+<dialog id="details"><button id="closeDialog" class="close">×</button><div id="detailsContent"></div></dialog>
+<script src="script.js"></script></body></html>
